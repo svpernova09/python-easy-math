@@ -1,34 +1,26 @@
 language: python
-
 cache: pip
-
 python:
-  - 3.4
-  - 3.5
-  - 3.6
-
+- 3.4
+- 3.5
+- 3.6
 matrix:
   include:
   - python: 3.7
     dist: xenial
     sudo: true
-
 install:
-  - pip install pipenv
-  - pipenv install --dev --skip-lock
-
-script:
-  pipenv run pytest --cov-report=xml -v
-
-after_success:
-  pipenv run codecov
-
+- pip install pipenv
+- pipenv install --dev --skip-lock
+script: pipenv run pytest --cov-report=xml -v
+after_success: pipenv run codecov
 deploy:
   provider: pypi
-  user: $TEST_PYPI_USER
-  password: $TEST_PYPI_PASS
+  user: joepfergsuon
+  password:
+    secure: FnvjexWK5J2dBhiL4Zg4hLzuauJCNEvFbblLJ/EhbbaoAlG6cGHM75ZzlCKT+Gx+Dc9KzWsVfQVNroG4bGEEu6XxwFRmVv6LJl601i1r+yMzoixRQ3DHDHqjVuM/yGp7402FbDTAptGnlZSkO/kqF80cO8vRjN+noMt4rx1INMAk6KyQqvP8Hz8JtzMQ05395XjnZFRztxJSXpZak3Mgh9dnBdw7A+Oh6c78BI0r5ZYrRWua0ZoZt2WHsk+vErldKwyNBuKpGt8rG6vkvD8VPaZqxmnI1C2UVIKS/K9AMr7/MCHBxKe/RD7GtaxOdHoBrqzfNTG+9vQ2u3qdvBs8YU7qNIrAwpBkUuzEoqyh87dN6jpgd7L1cI5KtsYVlQ19Ty6BiseScE37XHkspPVP9FPKBbasKOh3cc+ukosR6/HcTe+dkcRrs+fIbuRsWQygMkIwPXKBhD/SryvO9v9IqA0CLSlyMrHvvTn/pgTTjM1akWbmfaqggnWEiaKnfwD+87qYrSotIBGgsNHstt5pet8owkLleQUnDdIg/0leRP7tNCuLhQHIjZw/E5EDyl3evxjYMd+1KoiTfg+OOx68SXDCzBOrhCPFf3/2kUM0tk3k83C1hgqRMn7N8YtPcnjKWuMJ9V6BuqYT3+RxZV+1vLQcPIwQLXrY7IpTWPhqdQI=
   server: https://test.pypi.org/legacy/
-  distributions: "sdist bdist_wheel"
+  distributions: sdist bdist_wheel
   on:
     branch: staging
     condition: $TRAVIS_PYTHON_VERSION = "3.6"
