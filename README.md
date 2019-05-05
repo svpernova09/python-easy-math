@@ -5,7 +5,7 @@
         <td>License</td>
         <td><img src='https://img.shields.io/pypi/l/python-easy-math.svg'></td>
         <td>Version</td>
-        <td><img src='https://img.shields.io/pypi/v/amortization.svg'></td>
+        <td><img src='https://img.shields.io/pypi/v/python-easy-math.svg'></td>
     </tr>
     <tr>
         <td>Travis CI</td>
