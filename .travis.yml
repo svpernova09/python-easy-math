@@ -18,7 +18,7 @@ install:
   - pipenv install --dev --skip-lock
 
 script:
-  pipenv run pytest --cov=python-easy-math --cov-report=xml -v
+  pipenv run pytest --cov-report=xml -v
 
 after_success:
   pipenv run codecov
