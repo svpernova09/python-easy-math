@@ -33,5 +33,5 @@
 
 ## A simple library to do math for you
  
-Python Easy Math provides two classes containing two methods each. The Addition file provides the `add()` method which takes two parameters and returns the sum. The Subtraction file provides a single `subtract()` class that takes two parameters and will return the difference of the supplied parameters.
+Python Easy Math provides `addition.py` and `subtraction.py`. The Addition file provides the `add()` method which takes two parameters and returns the sum. The Subtraction file provides a single `subtract()` class that takes two parameters and will return the difference of the supplied parameters.
 
