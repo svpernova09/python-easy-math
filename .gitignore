@@ -1,0 +1,4 @@
+build/*
+dist/*
+venv/
+python_easy_math.egg-info
