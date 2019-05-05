@@ -1,6 +1,6 @@
 from setuptools import setup
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 setup(
     name='python-easy-math',
@@ -11,7 +11,7 @@ setup(
     license='MIT',
     author='Joe Ferguson',
     author_email='joe@joeferguson.me',
-    description='Python library for calculating the sum of two numbers',
+    description='Python library for basic addition and subtraction of two numbers',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     install_requires=[],
