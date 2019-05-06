@@ -1,11 +1,10 @@
 from setuptools import setup
-
-VERSION = '0.1.1'
+from easy_math import VERSION
 
 setup(
     name='python-easy-math',
     version=VERSION,
-    py_modules=['addition', 'subtraction'],
+    py_modules=['easy_math'],
     url='https://github.com/svpernova09/python-easy-math',
     download_url='https://github.com/svpernova09/python-easy-math/tarball/{}'.format(VERSION),
     license='MIT',
@@ -16,7 +15,10 @@ setup(
     long_description_content_type='text/markdown',
     install_requires=[],
     entry_points={
-        'console_scripts': ['addition=addition:main', 'subtraction=subtraction:main'],
+        'console_scripts': [
+            'addition=easy_math.addition:main',
+            'subtraction=easy_math.subtraction:main'
+        ],
     },
     classifiers=[
         'License :: OSI Approved :: MIT License',

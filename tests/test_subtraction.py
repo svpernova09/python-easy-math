@@ -1,4 +1,4 @@
-from subtraction import subtract
+from easy_math import subtraction
 
 
 def test_subtract_amount():
@@ -11,5 +11,5 @@ def test_subtract_amount():
     ]
 
     for i, val in enumerate(data):
-        assert subtract(val[0], val[1]) == val[2]
+        assert subtraction.subtract(val[0], val[1]) == val[2]
 

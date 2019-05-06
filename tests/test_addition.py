@@ -1,4 +1,4 @@
-from addition import add
+from easy_math import addition
 
 
 def test_add_amount():
@@ -12,5 +12,5 @@ def test_add_amount():
     ]
 
     for i, val in enumerate(data):
-        assert add(val[0], val[1]) == val[2]
+        assert addition.add(val[0], val[1]) == val[2]
 

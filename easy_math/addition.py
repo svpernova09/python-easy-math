@@ -16,16 +16,6 @@ def add(x, y):
     return x + y
 
 
-def subtract(x, y):
-    """
-    Subtracts y from x
-    :param x: integer
-    :param y: integer
-    :return: value of x - y
-    """
-    return x - y
-
-
 def main():  # pragma: no cover
     import argparse
 
