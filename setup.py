@@ -4,7 +4,7 @@ from easy_math import VERSION
 setup(
     name='python-easy-math',
     version=VERSION,
-    py_modules=['easy_math'],
+    py_modules=['easy_math.addition', 'easy_math.subtraction'],
     url='https://github.com/svpernova09/python-easy-math',
     download_url='https://github.com/svpernova09/python-easy-math/tarball/{}'.format(VERSION),
     license='MIT',
